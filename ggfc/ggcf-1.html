@@ -7,7 +7,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee9aed3d89fa4b4c6f4ae93283445d01&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ff6839cd3cbaf420dedb1a832620976c=services"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -550,7 +550,9 @@
         
         AOS.init();
         
-        
+
+        //.location 탭 색,이미지 변경
+
         $(".location > ul > li").click(function(){
             if($(this).find("i").attr("class") == "xi-plus-thin"){
                 $(".location i").attr("class","xi-plus-thin");
