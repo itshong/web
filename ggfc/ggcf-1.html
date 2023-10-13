@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>경기생활문화센터</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee9aed3d89fa4b4c6f4ae93283445d01&libraries=services"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html">
+                    <img src="images/main-logo.png" alt="경기생활문화센터">
+                </a>
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <a href="ggcf.html">경기생활문화센터</a>
+                    <ul class="mob">
+                        <li>
+                            <a href="ggcf.html">센터소개</a>
+                        </li>
+                        <li>
+                            <a href="#none">조직도</a>
+                        </li>
+                        <li>
+                            <a href="#none">사업안내</a>
+                        </li>
+                        <li>
+                            <a href="#none">오시는길</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ggcf-1.html">경기도생활문화</a>
+                    <ul class="mob">
+                        <li>
+                            <a href="ggcf-1.html">우리지역 생활문화공간</a>
+                        </li>
+                        <li>
+                            <a href="#none">생활문화 찾기</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">기록자료</a>
+                    <ul class="mob">
+                        <li>
+                            <a href="#none">영상채널</a>
+                        </li>
+                        <li>
+                            <a href="#none">발간도서</a>
+                        </li>
+                        <li>
+                            <a href="#none">지난사업</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">웹진</a>
+                    <ul class="mob">
+                        <li>
+                            <a href="#none">소개</a>
+                        </li>
+                        <li>
+                            <a href="#none">웹진</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">소통</a>
+                    <ul class="mob">
+                        <li>
+                            <a href="#none">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#none">자주묻는질문</a>
+                        </li>
+                        <li>
+                            <a href="#none">1:1문의</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="snb">
+                <li>
+                    <a href="#none">
+                        <i class="xi-lock-o"></i>
+                        로그인
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <i class="xi-search"></i>
+                        검색
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <i class="xi-calendar"></i>
+                        일정
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger mob nav" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="tab pc">
+            <div class="wrap">
+                <ul>
+                    <li>
+                        <a href="ggcf.html">센터소개</a>
+                    </li>
+                    <li>
+                        <a href="#none">조직도</a>
+                    </li>
+                    <li>
+                        <a href="#none">사업안내</a>
+                    </li>
+                    <li>
+                        <a href="#none">오시는길</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="ggcf-1.html">우리지역 생활문화공간</a>
+                    </li>
+                    <li>
+                        <a href="#none">생활문화 찾기</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#none">영상채널</a>
+                    </li>
+                    <li>
+                        <a href="#none">발간도서</a>
+                    </li>
+                    <li>
+                        <a href="#none">지난사업</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#none">소개</a>
+                    </li>
+                    <li>
+                        <a href="#none">웹진</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#none">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#none">자주묻는질문</a>
+                    </li>
+                    <li>
+                        <a href="#none">1:1문의</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="vtop">
+        <h2 class="blind">타이틀 배너 영역</h2>
+        <img src="images/sub-top-ani-01.png" alt="배경도형" class="tbg1 pc">
+        <img src="images/sub-top-ani-02.png" alt="배경도형ㅅ" class="tbg2 pc">
+        <img src="images/sub-top-ani-03.png" alt="배경도형ㅇ" class="tbg3 pc">
+        <div class="wrap">
+            <h3>경기도생활문화</h3>
+            <ul class="mtit">
+                <li class="select">
+                    <a href="ggcf-1.html">우리지역 생활문화공간</a>
+                </li>
+                <li>
+                    <a href="#none">생활문화찾기</a>
+                </li>
+            </ul>
+            <ul class="stit">
+                <li>
+                    <i class="xi-home"></i>
+                </li>
+                <li>
+                    경기도생활문화
+                </li>
+                <li>
+                    우리지역 생활문화공간
+                </li>
+            </ul>
+            <div class="isns pc">
+                <a href="#none">
+                    <i class="xi-facebook"></i>
+                </a>
+                <a href="#none">
+                    <i class="xi-kakaotalk"></i>
+                </a>
+                <a href="#none">
+                    <i class="xi-twitter"></i>
+                </a>
+                <a href="#none">
+                    <img src="images/naver_blog.png" alt="블로그 바로가기">
+                </a>
+                <a href="#none">
+                    <i class="xi-external-link"></i>
+                </a>
+            </div>
+            <div class="sch">
+                <input type="text" placeholder="기관명을 검색해 주세요.">
+                <a href="#none">
+                    <i class="xi-search"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="site">
+        <h2 class="blind">경기도 내 센터 지도</h2>
+        <div class="wrap">
+            <div class="total">
+                <p>
+                    총 <span>31</span>개 지역 <span>95</span>개소
+                </p>
+            </div>
+            <div class="color">
+                <p>공공기관</p>
+                <p class="pink">민간단체</p>
+            </div>
+            <div class="location">
+                <ul>
+                    <li>
+                        <a href="#none">전체보기</a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            가평
+                            <span>1개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            고양
+                            <span>7개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            과천
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            광명
+                            <span>4개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            광주
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            구리
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            군포
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            김포
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            남양주
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            동두천
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            부천
+                            <span>7개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            성남
+                            <span>5개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            수원
+                            <span>9개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            시흥
+                            <span>1개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            안산
+                            <span>4개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            안성
+                            <span>1개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            안양
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            양주
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            양평
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            여주
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            연천
+                            <span>1개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            오산
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            용인
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            의왕
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            의정부
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            이천
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            파주
+                            <span>1개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            평택
+                            <span>4개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            포천
+                            <span>2개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            하남
+                            <span>3개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            화성
+                            <span>5개소</span>
+                            <i class="xi-plus-thin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <ul class="nav">
+                    <li>
+                        <a href="#none">개인정보 처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#none">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#none">행정정보공개</a>
+                    </li>
+                    <li>
+                        <a href="#none">클린신고센터</a>
+                    </li>
+                </ul>
+                <ul class="i-sns">
+                    <li>
+                        <a href="#none">
+                            <i class="xi-facebook-official"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="xi-kakaotalk"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="xi-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <i class="xi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="f-site">
+                    <a href="#none" class="site">
+                        <span>패밀리 사이트</span>
+                        <i class="xi-angle-up-min"></i>
+                    </a>
+                    <ul class="site-link">
+                        <li>
+                            <a href="#none">경기상상캠퍼스</a>
+                        </li>
+                        <li>
+                            <a href="#none">경기문화재단</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="images/main-logo-gray.png" alt="경기생활문화센터">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="images/gunggido_logo.png" alt="경기도">
+                        </a>
+                    </li>
+                </ul>
+                <address>
+                    경기문화재단 경기생활문화센터 (16614) 경기도 수원시 권선구 서둔로 166 생생1990 / 대표전화 <a href="tel:0312960540">031-296-0540</a>
+                    <br>사업자번호 135-82-06932
+                    <br>COPYRIGHT&copy;GGCF. ALL RIGHTS RESERVED.
+                </address>
+            </div>
+        </div>
+        <button>
+            <i class="xi-angle-up-min"></i>
+        </button>
+    </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script>
+        
+        $(".mtit li").click(function(){
+            $(this).siblings().removeClass("select");
+            $(this).addClass("select");
+        });
+        
+        AOS.init();
+        
+        
+        $(".location > ul > li").click(function(){
+            if($(this).find("i").attr("class") == "xi-plus-thin"){
+                $(".location i").attr("class","xi-plus-thin");
+                $(this).find("i").attr("class","xi-minus-thin");
+                $(this).siblings().children("a").removeClass("click");
+                $(this).children("a").addClass("click");
+               } else {
+                   $(".location i").attr("class","xi-plus-thin");
+                   $(".location a").removeClass("click");
+               }
+        });
+    
+        // 지도
+        // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
+        var infowindow = new kakao.maps.InfoWindow({zIndex:1});
+        
+        var container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.2809898866134, 127.015221622151), //지도의 중심좌표.
+            level: 11 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        
+        // 장소 검색 객체를 생성합니다
+        var ps = new kakao.maps.services.Places(); 
+
+        // 키워드로 장소를 검색합니다
+        ps.keywordSearch('경기도 생활문화센터', placesSearchCB); 
+
+        // 키워드 검색 완료 시 호출되는 콜백함수 입니다
+        function placesSearchCB (data, status, pagination) {
+            if (status === kakao.maps.services.Status.OK) {
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+                // LatLngBounds 객체에 좌표를 추가합니다
+                var bounds = new kakao.maps.LatLngBounds();
+
+                for (var i=0; i<data.length; i++) {
+                    displayMarker(data[i]);    
+                    bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+                }       
+
+                // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+                map.setBounds(bounds);
+            } 
+        }
+
+        // 지도에 마커를 표시하는 함수입니다
+        function displayMarker(place) {
+
+            // 마커를 생성하고 지도에 표시합니다
+            var marker = new kakao.maps.Marker({
+                map: map,
+                position: new kakao.maps.LatLng(place.y, place.x) 
+            });
+
+            // 마커에 클릭이벤트를 등록합니다
+            kakao.maps.event.addListener(marker, 'click', function() {
+                // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
+                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+                infowindow.open(map, marker);
+            });
+        }
+        
+    </script>    
+     
+</body>
+</html>
