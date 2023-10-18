@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>kwater</title>
+	
+    
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <script type="text/javascript">
+        var deleteLog = false; 
+        
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+            sectionsColor: ['#1bbc9b', '#f5fcff', '#7BAABE', 'whitesmoke', '#e8f4ff', '#cccccc'],
+            anchors: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5'],
+            menu: '#menu',
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['메인', 'K-water', '서비스', '뉴스', '문화', '채용'],
+            responsiveWidth: 800,
+            onLeave: function(index, nextIndex, direction){
+                if (nextIndex == 3 || nextIndex == 6 || nextIndex == 7) {
+                    $("#fp-nav ul").addClass("wh");
+                } else {
+                    $("#fp-nav ul").removeClass("wh");
+                }
+            },
+
+            afterLoad: function(anchorLink, index){
+                
+            }
+        });
+
+            
+        });
+        
+        
+    </script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body id="main">
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html">
+                    <img src="images/head_logo.png" alt="kwater">
+                </a>
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#none">ESG경영</a>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#none">ESG경영</a>
+                        </li>
+                        <li>
+                            <a href="#none">E(환경)</a>
+                        </li>
+                        <li>
+                            <a href="#none">S(사회)&middot;안전</a>
+                        </li>
+                        <li>
+                            <a href="#none">G(거버넌스)</a>
+                        </li>
+                        <li>
+                            <a href="#none">경영공사&middot;SR</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">국민소통</a>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#none">국민소통센터</a>
+                        </li>
+                        <li>
+                            <a href="#none">고객헌장</a>
+                        </li>
+                        <li>
+                            <a href="#none">고객광장</a>
+                        </li>
+                        <li>
+                            <a href="#none">고객지원</a>
+                        </li>
+                        <li>
+                            <a href="#none">맑은물공급 요금</a>
+                        </li>
+                        <li>
+                            <a href="#none">정보공개</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">새소식</a>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#none">게시판</a>
+                        </li>
+                        <li>
+                            <a href="#none">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="#none">뉴스룸</a>
+                        </li>
+                        <li>
+                            <a href="#none">홍보광장</a>
+                        </li>
+                        <li>
+                            <a href="#none">물사랑공모전</a>
+                        </li>
+                        <li>
+                            <a href="#none">K-water<br>온라인수도박물관</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">대국민 서비스</a>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#none">물안심 서비스</a>
+                        </li>
+                        <li>
+                            <a href="#none">물나눔 서비스</a>
+                        </li>
+                        <li>
+                            <a href="#none">물융합 서비스</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">기관소개</a>
+                    <ul class="hidden">
+                        <li>
+                            <a href="#none">일반현황</a>
+                        </li>
+                        <li>
+                            <a href="#none">CEO</a>
+                        </li>
+                        <li>
+                            <a href="#none">조직 및 연락처</a>
+                        </li>
+                        <li>
+                            <a href="#none">CI</a>
+                        </li>
+                        <li>
+                            <a href="#none">문화관</a>
+                        </li>
+                        <li>
+                            <a href="#none">선수단</a>
+                        </li>
+                        <li>
+                            <a href="#none">찾아오시는길</a>
+                        </li>
+                    </ul>    
+                </li>
+            </ul>
+            <ul class="snb">
+                <li>
+                    <a href="#none">ENGLISH</a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <img src="images/main_search.png" alt="검색버튼">
+                    </a>
+                </li>
+                <li class="mob">
+                    <a href="#none">
+                        <div class="hamburger " id="hamburger-6">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="block hidden pc"></div>
+    </header>
+    <div id="fullpage">
+        <section class="section " id="section0">
+            <h2 class="blind">K-water 메인 페이지</h2>
+            <div class="wrap">
+                <img src="images/text_1-5.png" alt="기후위기 재난대비 국민의 생명,안전,재산 보호를 최우선으로 하겠습니다.">
+                <div class="main-menu cl">
+                    <figure class="prev btn pc"></figure>
+                    <div class="line">
+                        <ul>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                        <img src="images/fave_01.png" alt="사이트맵">
+                                    </figure>
+                                    <p>사이트맵</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_02.png" alt="채용정보">
+                                    </figure>    
+                                    <p>채용정보</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_03.png" alt="국민소통센터">
+                                    </figure>    
+                                    <p>국민소통센터</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_04.png" alt="고객요금조회">
+                                    </figure>
+                                    <p>고객요금조회</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_05.png" alt="실시간 수문정보">
+                                    </figure>
+                                    <p>실시간 수문정보</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_06.png" alt="공지사항">
+                                    </figure>
+                                    <p>공지사항</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_07.png" alt="ALIO공시">
+                                    </figure>
+                                    <p>ALIO공시</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_08.png" alt="수도요금 현황">
+                                    </figure>
+                                    <p>수도요금 현황</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_09.png" alt="뉴스룸">
+                                    </figure>
+                                    <p>뉴스룸</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_10.png" alt="정보공개">
+                                    </figure>
+                                    <p>정보공개</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_11.png" alt="안전경영">
+                                    </figure>
+                                    <p>안전경영</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <figure>
+                                    <img src="images/fave_12.png" alt="온라인 고객센터">
+                                    </figure>
+                                    <p>온라인 고객센터</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="num mob">
+                            <li class="dot1">1</li>
+                            <li class="dot2">2</li>
+                        </ul>
+                    </div>
+                    <figure class="next btn pc"></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section1">
+            <h2 class="blind">K-water 홍보영역</h2>
+            <div class="wrap">
+                <div class="title">
+                    <h3>
+                        <img src="images/main_h3_title.png" alt="k-water">
+                        K-water
+                    </h3>
+                    <p>
+                        국가 물안전과 국민 물복지의<br class="mob"> 초석을 다져온 K-water!
+                    </p>
+                </div>
+                <div class="bnr cl">
+                    <div class="top">
+                        <div class="top1">
+                            <a href="#none">
+                                <dl>
+                                    <dt>K-water CEO</dt>
+                                    <dd>
+                                        대한민국 재도약에 함께하는
+                                        <br>새로운 물의 시대를
+                                        <br>열어가겠습니다.
+                                    </dd>
+                                </dl>
+                                <img src="images/main_arrow_fff.png" alt="바로가기">
+                            </a>
+                        </div>
+                        <div class="top2">
+                            <a href="#none">
+                                <dl>
+                                    <dt>안전&middot;환경</dt>
+                                    <dd>
+                                        K-water의 안전관련 법령을 소개합니다.
+                                    </dd>
+                                </dl>
+                                <img src="images/main_arrow_000.png" alt="바로가기">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <a href="#none"></a>
+                    </div>
+                    <div class="botm">
+                        <div class="botm1">
+                            <a href="#none">
+                                <dl>
+                                    <dt>찾아오시는 길</dt>
+                                    <dd>
+                                        편리하고 쉽게 찾으실 수 있도록
+                                        <br>찾아오시는 길을 안내해 드립니다.
+                                    </dd>
+                                </dl>
+                                <img src="images/main_arrow_000.png" alt="바로가기">
+                            </a>
+                        </div>
+                        <div class="botm2">
+                            <p>K-water SNS</p>
+                            <ul>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02yt.png" alt="유튜브">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02fb.png" alt="페이스북">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02in.png" alt="인스타그램">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02bl.png" alt="네이버블로그">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02na.png" alt="네이버포스트">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02tw.png" alt="트위터">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <img src="images/main_menu_02kt.png" alt="카카오톡">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <h2 class="blind">K-water 서비스 영역</h2>
+            <div class="wrap">
+                <div class="title">
+                    <h3>
+                        <img src="images/main_h3_title_fff.png" alt="서비스">
+                        서비스
+                    </h3>
+                    <p>
+                        K-water의 서비스에 <br class="mob">쉽고 빠르게 접근해보세요.
+                    </p>
+                </div>
+                <div class="service cl">
+                    <div class="online">
+                        <h3>
+                            온라인 고객센터
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#none">민원이용안내</a>
+                            </li>
+                            <li>
+                                <a href="#none">정보공개안내</a>
+                            </li>
+                            <li>
+                                <a href="#none">맑은물공급 요금안내</a>
+                            </li>
+                            <li>
+                                <a href="#none">부패신고안내</a>
+                            </li>
+                            <li>
+                                <a href="#none">고객요금조회</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="svc cl">
+                        <ul class="icon">
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_sec2_ico1.png" alt="국민소통센터">
+                                    국민소통센터
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_sec2_ico2.png" alt="입찰안내">
+                                    입찰안내
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_sec2_ico3.png" alt="동반성장 물산업플랫폼">
+                                    동반성장
+                                    <br>물산업플랫폼
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_sec2_ico4.png" alt="분양정보">
+                                    분양정보
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="water">
+                            <div>
+                                <a href="#none">
+                                    <img src="images/main_sec2_icon5.png" alt="지방상수도포털">
+                                    지방상수도포털
+                                </a>
+                            </div>
+                            <div class="cl">
+                                <span>
+                                    나의
+                                    <br>물정보
+                                </span>
+                                <ul>
+                                    <li>
+                                        <a href="#none">
+                                            My Water
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            실시간 수문정보
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tel">
+                            <p>고객센터</p>
+                            <a href="tel:15770600">1577 - 0600</a>
+                        </div>
+                    </div>
+                    <div class="esg">
+                        <h3>ESG경영</h3>
+                        <ul>
+                            <li>
+                                <a href="#none">추진체계</a>
+                            </li>
+                            <li>
+                                <a href="#none">경영공시</a>
+                            </li>
+                            <li>
+                                <a href="#none">사회공헌</a>
+                            </li>
+                            <li>
+                                <a href="#none">일자리창출</a>
+                            </li>
+                            <li>
+                                <a href="#none">윤리경영</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section " id="section3">
+            <h2 class="blind">K-water news 영역</h2>
+            <div class="wrap">
+                <div class="title">
+                    <h3>
+                        <img src="images/main_h3_title.png" alt="뉴스">
+                        뉴스
+                    </h3>
+                    <p>
+                        K-water의 다양한 소식을 공유합니다.
+                    </p>
+                </div>
+                <ul class="notice">
+                    <li>
+                        <h4>공지</h4>
+                        <a href="#none">
+                            수도권광역상수도(1단계) 노후관 개량사업(2차) 시설공사 안전점검 안내
+                        </a>
+                        <p>2023-10-06</p>
+                        <a href="#none">
+                            <img src="images/main_news_plus.png" alt="더보기">
+                        </a>
+                    </li>
+                    <li class="pc">
+                        <h4>공지</h4>
+                        <a href="#none">
+                            [화순] 2023년 9월 정수품질검사 성적서
+                        </a>
+                        <p>2023-10-05</p>
+                        <a href="#none">
+                            <img src="images/main_news_plus.png" alt="더보기">
+                        </a>
+                    </li>
+                    <li class="pc">
+                        <h4>공지</h4>
+                        <a href="#none">
+                            (사)한국대댐회 사무국 기간제 계약직원 채용공고
+                        </a>
+                        <p>2023-10-05</p>
+                        <a href="#none">
+                            <img src="images/main_news_plus.png" alt="더보기">
+                        </a>
+                    </li>
+                    <li class="pc">
+                        <h4>보도</h4>
+                        <a href="#none">
+                            한국수자원공사, '카눈' 한반도 벗어날 때까지 대응 유지
+                        </a>
+                        <p>2023-08-10</p>
+                        <a href="#none">
+                            <img src="images/main_news_plus.png" alt="더보기">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tab mob">
+                    <li class="select">웹진</li>
+                    <li>동영상</li>
+                    <li>카드뉴스</li>
+                    <li>공공알림</li>
+                </ul>
+                <div class="under cl">
+                    <div class="web">
+                        <h4>WEBZINE</h4>
+                        <p>2023년 9월 / vol.666</p>
+                        <ul>
+                            <li>
+                                <a href="#none">웹진 보러가기</a>
+                            </li>
+                            <li>
+                                <a href="#none">구독 신청하기</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vedio">
+                        <a href="#none"></a>
+                        <div>
+                            <p>동영상</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <a href="#none"></a>
+                        <div>
+                            <p>카드뉴스</p>
+                        </div>
+                    </div>
+                    <div class="public">
+                        <ul>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/1695704811137.jpg" alt="내정보는 지키고 안전하게 즐겨라! 내정보지킴이 캠패인">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/_2BVohxOhImJ9VZjCANf0D1HQlPKBtSQkKfpNXl4oVkYVL8DcH2wxWogukhUPi0OMc.jpg" alt="2030 부산세계박람회 2023세계박람회 부산 유치를 응원합니다">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/_2BVohxOhImJ9VZjCANf0D1JWFWIm1cZuxcbbEOfDBguaAjiwszsHmx8IaN6RI0sPF.jpg" alt="함께 만드는 모두의 일상이 안전한 대한민국 국가안전시스템 개편 종합대책">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="bar">
+                            <p>공공알림</p>
+                            <div>
+                                <span class="numb">1</span> / <span class="tot">3</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#none" class="prev">
+                                        <img src="images/main_pop_leftarrow222.png" alt="이전">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="stop">
+                                        <img src="images/main_pop_stop2222.png" alt="정지">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none" class="next">
+                                        <img src="images/main_pop_rightarrow222.png" alt="다음">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section4">
+            <h2 class="blind">K-water 문화 역역</h2>
+            <div class="wrap">
+                <div class="title">
+                    <h3>
+                        <img src="images/main_h3_title.png" alt="문화">
+                        문화
+                    </h3>
+                    <p>
+                        이 달의 K-water 문화관을 소개합니다.
+                    </p>
+                </div>
+                <div class="museum">
+                    <img src="images/lbox-onmuseum.jpg" alt="K-water 온라인 수도박물관">
+                    <p>
+                        K-water
+                        <br>온라인 수도박물관
+                    </p>
+                    <a href="#none">자세히 보기</a>
+                </div>
+                <div class="sns cl">
+                    <div class="vdo">
+                        <a href="#none">
+                            <img src="images/culture_youtube1.jpg" alt="로드여신과 함께하는 남한강 자전거길 라이딩 유튜브영상" class="pc">
+                            <p class="mob">"남한강 자전거길 라이딩 유.."<span>유튜브 바로가기 &gt;</span></p>
+                        </a>
+                    </div>
+                    <div class="blog">
+                        <a href="#none">
+                            <h3 class="pc">BLOG</h3>
+                            <p class="pc">K-water가 추천하는 오천자전거길</p>
+                            <p class="mob">"K-water가 추천하는 오천.."<span>블로그 바로가기 &gt;</span></p>
+                        </a>
+                    </div>
+                    <div class="ytub">
+                        <a href="#none">
+                            <img src="images/6_2FOwX0LsLBQSMKLA_2BrFzOdFKwUrhlZTJkUbeJAQxKIrAkL2f2Mggf1JwSYlooDSZ.jpg" alt="강문화관 소식을 한눈에 강문화관 유튜브">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section5">
+            <h2 class="blind">K-water 채용 영역</h2>
+            <div class="wrap">
+                <div class="title">
+                    <h3>
+                        <img src="images/main_h3_title_fff.png" alt="채용">
+                        채용
+                    </h3>
+                    <p>
+                        K-water의 소중한 가족이 되어주세요.
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            인재상/복리후생
+                        </a>
+                        <a href="#none">
+                            직원 평균보수 현황
+                        </a>
+                    </li>
+                    <li>
+                        <h3>K-water 공채</h3>
+                        <a href="#none" class="pl">더보기</a>
+                        <img src="images/no_recrPopup.png" alt="현재 진행 중인 채용공고가 없습니다.">
+                    </li>
+                    <li>
+                        <h3>K-water 수시채용</h3>
+                        <a href="#none" class="pl">더보기</a>
+                        <table class="ntc">
+                            <tr>
+                                <td class="tit nb">
+                                    <a href="#none">
+                                        [한강/고양] [2차 재공고] 경기서북권지사 사회형평적 인재(장애인) 단기계약근로자(공정관리 보조) 채용
+                                    </a>
+                                </td>
+                                <td class="date">
+                                    2023-10-11
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tit nb">
+                                    <a href="#none">
+                                        [금강/완주] (재)전주권지사 사회형평적 인재 단기계약근로자 채용
+                                    </a>    
+                                </td>
+                                <td class="date">
+                                    2023-10-11
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tit nb">
+                                    <a href="#none">
+                                        [금강/천안] 천안권지사 천안시현대화사업팀 특수직(기술관리_건설사업) 채용
+                                    </a>    
+                                </td>
+                                <td class="date">
+                                    2023-10-10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tit cw">
+                                    <a href="#none">
+                                        [염성/광주] 영&middot;섬경영처 비대면&middot;디지털 일자리사업 단기계약근로자(사무관리_서무보조) 채용 공고(장애인 제한채용)
+                                    </a>    
+                                </td>
+                                <td class="date">
+                                    2023-10-05
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tit cw">
+                                    <a href="#none">
+                                        [낙동강유역/울산] 울산권지사 단기계약근로자(수질감시) 채용
+                                    </a>
+                                </td>
+                                <td class="date">
+                                    2023-10-06
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section fp-auto-height" id="section6">
+            <h2 class="blind">회사정보 영역</h2>
+            <div id="footer">
+                <div class="wrap">
+                    <div class="rink">
+                        <ul class="nav1">
+                            <li>
+                                <a href="#none">개인정보 처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#none">저작권정책</a>
+                            </li>
+                            <li>
+                                <a href="#none">직원광장</a>
+                            </li>
+                            <li>
+                                <a href="#none">찾아오시는길</a>
+                            </li>
+                        </ul>
+                        <ul class="nav2">
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snsyt.png" alt="유튜브">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snsfa.png" alt="페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snsin.png" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snsbl.png" alt="네이버 블로그">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snsna.png" alt="네이버 포스트">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snstw.png" alt="트위터">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ft_snskt.png" alt="카카오톡">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="site">
+                            <a href="#none">
+                                <p>관련사이트</p>
+                                <img src="images/relate_site_arrow_d.png" alt="펼치기">
+                            </a>
+                            <ul class="site-link">
+                                <li>
+                                    <a href="#none">
+                                        My Water (물정보포털)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 국민소통센터
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 연구원
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 인재개발원
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        지방상수도포털(Water-pos)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 공공데이터개방포털
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 물산업플랫폼
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 온라인청약시스템
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        K-water 전자조달시스템
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        국가가뭄정보포털
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        건설사업관리시스템
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        경인아라뱃길
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        국가지하수정보센터(GIMS)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        댐사전검토협의회
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        부산에코델타시티
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        송산그린시티
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        수우회
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        부산 에코델타 스마트시티
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        시화지구지속가능발전협의회
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        시화호조력발전소
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        우리강이용도우미포털
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        수자원환경산업진흥
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        환경 빅데이터 플랫폼
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        기술기준통합정보시스템
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btm cl">
+                        <div class="info">
+                            <span>
+                                주소 : 34350 대전광역시 대덕구 신탄진로 200
+                            </span>
+                            <span>
+                                대표전화 : <a href="tel:0426293114">042-629-3114</a> / 고객센터 : <a href="tel:15770600">1577-0600</a>
+                            </span>
+                            <span>
+                                Copyright &copy; K-water All Rights Reserved.
+                            </span>
+                        </div>
+                        <ul class="logo">
+                            <li>
+                                <img src="images/main_ftlogo_kwater.png" alt="kwater">
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ftlogo_webacc.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                                </a>
+                            </li>
+                            <li>
+                                <img src="images/main_ftlogo_make.png" alt="Most Admired MAKE">
+                            </li>
+                            <li>
+                                <img src="images/main_ftlogo_icsi.png" alt="ICSI">
+                            </li>
+                            <li>
+                                <img src="images/main_ftlogo_kgw.png" alt="K-GWPI">
+                            </li>
+                            <li>
+                                <img src="images/main_ftlogo_cem.png" alt="Most Admired Cempanica">
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="images/main_ftlogo_re100.png" alt="RE100">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <button class="mob">Top</button>
+
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script>
+        // #section0 슬라이드(pc버전)
+        var ln = $(".main-menu ul li").length;
+        var n = 0;
+        function slide(){
+            n++;
+            if (n >= 4) {
+                n = 4; 
+            }
+            $(".main-menu ul").animate({"left":-150*n},300);
+        }
+        $(".next").click(function(){
+            slide();
+        });
+        $(".prev").click(function(){
+            n--;
+            if(n <= 0) {
+                n = 0;
+            }
+            $(".main-menu ul").animate({"left":-150*n},300);
+        });
+        
+        // #section0 슬라이드(mobile버전)
+        $(".num .dot1").click(function(){
+            $(".main-menu ul:first-child").animate({"left":0});
+        });
+        $(".num .dot2").click(function(){
+            $(".main-menu ul:first-child").animate({"left":-100+"%"});
+        });
+        
+        // #section3 .public 슬라이드배너
+        var lw = $(".public > ul li").width(); 
+        var len = $(".public > ul li").length; 
+        var p = 0; 
+        
+        $(".tot").text(len);
+        
+        $(".public > ul").width(lw * (len+1));
+        
+        $(".public > ul").append($(".public > ul li:nth-child(1)").clone());
+        
+        function slide3(){
+            p++; 
+            if (p >= len){
+                $(".public > ul").animate({"left":-lw * p},300,function(){
+                    $(this).css({"left":0});
+                })
+                p = 0; 
+            } else {
+                $(".public > ul").animate({"left":-lw * p},300);
+            };
+            $(".numb").text(p+1);
+        }
+        
+        var timer = setInterval("slide3()",3000);
+        
+        var chk = 0;
+        
+        $(".bar .stop").click(function(){
+            if ( chk == 0 ){
+                clearInterval(timer);
+                $(this).children("img").attr("src","images/btn_play2222.png");
+                chk = 1; 
+            } else {
+                timer = setInterval("slide3()",3000);
+                $(this).children("img").attr("src","images/main_pop_stop2222.png");
+                chk = 0;
+            }
+        });
+        
+        $(".next").click(function(){
+            slide3(); 
+        });
+        
+        $(".prev").click(function(){
+            p--;
+            if(p < 0) {
+                p = len-1;
+                $(".public > ul").css({"left":-lw * (p+1)}).animate({"left":-lw * p},300);
+            } else {
+                $(".public > ul").animate({"left":-lw * p},300);
+            }
+            $(".numb").text(p+1);
+        });
+        
+        
+        // #section3 텝메뉴(mobile버전)
+        
+        $(".tab li").click(function(){
+            var t = $(this).index() + 1; 
+            
+            $(this).siblings().removeClass("select");
+            $(this).addClass("select");
+            $(".under > div").css({"display":"none"});
+            $(".under > div:nth-of-type("+t+")").css({"display":"block"});
+        });
+    
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+
+</body>
+</html>
