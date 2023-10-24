@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>2023portfolio</title>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -12,9 +12,21 @@
 </head>
 <body>
     <header>
-        
+        <div class="logo">
+            <h1>
+                <a href="https://itshong.github.io/web"></a>
+            </h1>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+        </ul>
     </header>
-    <section id="main">
+    <section id="conts1">
         <h2 class="blind">메인영역</h2>
         <div class="mtitle black">
             <h3>
@@ -35,7 +47,7 @@
             </div>
         </div>
     </section>
-    <section id="pf">
+    <section id="conts2">
         <h2 class="blind">포트폴리오</h2>
         <div class="portfolio">
             <ul class="slide">
@@ -247,13 +259,157 @@
             </div>
         </div>
     </section>
-    <section id="career">
-        <h2 class="blind">이력서</h2>
-        
+    <section id="conts3">
+        <h2 class="blind">이력서,자기소개서</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide pr1">
+                    <div class="wrap">
+                        <div class="tit"></div>
+                        <div class="about">
+                            <img src="images/me_bg.png" alt="밝은 에너지 가득한 웹퍼블리셔 이소영입니다.">
+                            <p>
+                                "밝은 에너지 가득한 
+                                <br>웹퍼블리셔 이소영입니다."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide pr2">
+                    <div class="wrap">
+                        <div class="me cl">
+                            <div class="pic"></div>
+                            <div class="txt">
+                                이름 : 이소영 (LEE SO YOUNG)
+                                <br>생년월일 : 1991. 09. 05
+                                <br>이메일 : itshong91@gmail.com
+                                <br>핸드폰 :  010-9588-3241
+                                <br>자격증 : GTQ 1급 
+                                <br><span>컬러리스트 기사</span>
+                                <br><span>제과기능사</span>  
+                            </div>
+                        </div>
+                        <div class="tool cl">
+                            <p>TOOLS</p>
+                            <div class="progress-bar-container">
+                                <h3>
+                                    <label for="html">HTML/CSS</label>
+                                </h3>
+                                <div class="progress-bar html">
+                                    <progress id="html" min="0" max="100" value="85"></progress>
+                                </div>
+                                <p>
+                                    원하는 구성으로 상황에 맞는 코드를 이용해 웹사이트를 코딩할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <h3>
+                                    <label for="js">JavaScript/JQuery</label>
+                                </h3>
+                                <div class="progress-bar js">
+                                    <progress id="js" min="0" max="100" value="70"></progress>
+                                </div>
+                                <p>
+                                    다양한 코드를 이용해 웹사이트에 움직임 또는 기능을 구현할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <h3>
+                                    <label for="ps">Photoshop</label>
+                                </h3>
+                                <div class="progress-bar ps">
+                                    <progress id="ps" min="0" max="100" value="90"></progress>
+                                </div>
+                                <p>
+                                    포토샵의 기능들을 원하는 대로 조작하여 페이지를 디자인할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <h3>
+                                    <label for="ai">Illustrator</label>
+                                </h3>
+                                <div class="progress-bar ai">
+                                    <progress id="ai" min="0" max="100" value="90"></progress>
+                                </div>
+                                <p>
+                                    일러스트의 펜,도형을 이용해 아이콘을 그려내거나 간단한 캐릭터를 만들 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide pr3">
+                    <div class="wrap">
+                        <div class="why">
+                            <h3>
+                                왜 퍼블리셔인가?
+                            </h3>
+                            <p>
+                                이전 직장을 나오고서 미래를 고민하던 중 앞으로 나이들고도 계속 할 수 있는, 그러면서도 내가 하고싶어하는 일이 무엇일까 고민하게 되었습니다. 
+                                <br>처음 시작은 디자인 영역과 가까우면서도 디자인이 아닌 개발자 영역에서 일하는 점이 흥미로워서 'UI/UX 웹퍼블리셔'과정을 듣게 되었습니다. 수업을 통해 얻게 된 것은 새로운 지식뿐 아니라 제 적성에 맞는 직업을 발견하게 해준 것 입니다. 
+                                <br>저의 꼼꼼한 성격상 놓치거나 실수하는 것 없이 코드를 작성해나가고 작성된 코드를 바탕으로 웹서버에 구현되는 것을 보며 작업에 대한 성취감을 느꼈습니다. 또한 모르는 언어에 대해 공부하고 알아감에 재미를 느껴서 웹퍼블리셔라는 직업이라면 평생 재밌게 배우며 일할 수 있겠다는 생각이 들었습니다. 
+                                <br>5개월 이라는 길지도 짧지도 않은 기간동안 교육을 받으며 이러한 생각이 더욱 굳혀졌고, 이 직업에 대한 확신이 굳게 섰습니다. 
+                            </p>
+                        </div>
+                        <div class="swot">
+                            <h3>SWOT 분석</h3>
+                            <div class="s">
+                                <h3>S</h3>
+                                <p>
+                                    밝은 에너지로 주변의 분위기를 유하게 만들어 기분좋은 시너지를 만들어 냅니다. 같은 일도 어떤 분위기에서 하느냐에 따라 일의 능률이 오르고 내릴 수 있습니다. 서로가 협력하는 분위기를 이끌어내 최고의 성과를 이룰 수 있도록 하겠습니다.
+                                </p>
+                            </div>
+                            <div class="w">
+                                <h3>W</h3>
+                                <p>
+                                    코딩 경험이 부족하여 기능을 능숙히 다루지 못해 속도가 좀 더디지만 빠른 결단력으로 막히는 것에 머무르지 않고 해결할 수 있는 것 부터 해결하고 돌아와 다시 찾아보며 해답을 찾기에 시간 활용을 효율적으로 한다고 자부할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="o">
+                                <h3>O</h3>
+                                <p>
+                                    언제나 남들보다 일찍 하루를 시작하는 제과제빵 일을 하면서 단 한번도 지각한 적 없고, 스케줄이 유동적으로 바뀔때에도 결근없이 항상 근면 성실하게 일해왔습니다.모든 일의 기본은 자세에서 부터 시작되는 것 처럼 항상 근면하고 성실한 자세로 근무에 임하겠습니다.
+                                </p>
+                            </div>
+                            <div class="t">
+                                <h3>T</h3>
+                                <p>
+                                    비전공자로서 상대적으로 컴퓨터 언어에 대한 지식이 부족하지만 일을 하면서 모르는 것은 꼭 찾아보며 알아갈 것이고, 끊임없이 배우며 부족한 점을 채워갈 것입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide pr4">
+                    <div class="wrap">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         
-        // #main 스크롤 애니메이션
+        // header 메뉴 스크롤탑
+        
+        $(".menu li").click(function(){
+            var m = $(this).index() + 2; 
+            console.log(m);
+            var st = $("#conts" + m).offset().top;
+            
+            $("html").animate({scrollTop:st},500);
+            
+            return false;
+        });
+        
+        
+        
+        // #conts1 스크롤 애니메이션
         
         gsap.to(".clipp",{
             scrollTrigger:{
@@ -277,7 +433,7 @@
         });
         
         
-        // #pf 자동 슬라이드
+        // #conts2 자동 슬라이드
         
         var ln = $(".slide li").length;
         
@@ -329,6 +485,24 @@
             }
         });
         
+        
+        <!-- Initialize Swiper -->
+  
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          keyboard: {
+            enabled: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
         
         
         
