@@ -99,9 +99,16 @@ header ul li { float: left; margin-left: 50px; line-height: 70px; font-size: 24p
       justify-content: center;
       align-items: center;
     }
+
+#conts3 .swiper .swiper-button-prev { left: 90px; color: #333; }
+#conts3 .swiper .swiper-button-next { right: 80px; color: #333; }
+#conts3 .swiper .swiper-pagination::before { content: "← keyboard →"; display: block; font-size: 16px; }
+#conts3 .swiper .swiper-pagination-bullet-active { background: #333; }
+
 #conts3 .pr1 .tit { width: 235px; height: 56px; background: url(../images/me_tit.png)no-repeat center; }
 #conts3 .pr1 .about { display: flex; align-items: center; justify-content: center; width: 100%; flex-direction: column;  }
-#conts3 .pr1 .about p { font-size: 50px; color: #ffc62d; font-weight: 500; position: relative; top: -70px; }
+#conts3 .pr1 .about p { font-size: 46px; font-weight: 500; position: relative; top: -80px; }
+#conts3 .pr1 .about p span { font-size: 50px; color: #ffbc2d; font-weight: 700; }
 
 #conts3 .pr2 .wrap > div { float: left; }
 #conts3 .pr2 .me .pic { float: left; width: 294px; height: 334px; background: url(../images/me_pic.JPG)no-repeat center/cover; } 
@@ -173,6 +180,38 @@ header ul li { float: left; margin-left: 50px; line-height: 70px; font-size: 24p
 #conts3 .pr3 .swot > div:nth-of-type(4) { margin-right: 0; }
 #conts3 .pr3 .swot div > h3 { font-size: 40px; width: 60px; line-height: 60px; text-align: center; background: #333; color: #fff; position: absolute; left: 0; top: 0; }
 #conts3 .pr3 .swot p { font-size: 18px; font-weight: 500; text-align: justify; word-break: keep-all; }
+
+
+#conts3 .pr4 .exp { position: relative; width: 100%; }
+#conts3 .pr4 .exp h3 { font-size: 26px; text-align: left; margin-bottom: 20px; }
+#conts3 .pr4 .exp .pic { width: 690px; height: 511px; border-radius: 30px; overflow: hidden; }
+#conts3 .pr4 .exp .ment { width: 690px; height: 500px; overflow: hidden; position: absolute; right: 0; bottom: 0; }
+#conts3 .pr4 .exp .ment li { display: none; }
+#conts3 .pr4 .exp .ment li.up { display: block; }
+#conts3 .pr4 .exp .ment li p { text-align: justify; word-break: keep-all; line-height: 30px; }
+#conts3 .pr4 .exp .ment li p span { font-size: 22px; font-weight: 500; }
+
+#conts3 .pr4 .min { position: relative; left: 0; top: 30px; }
+#conts3 .pr4 .min li { float: left; width: 165px; height: 150px; margin-right: 10px; }
+#conts3 .pr4 .min li:last-child { margin-right: 0; }
+#conts3 .pr4 .min li a { display: block; border: 5px solid transparent; border-radius: 20px; overflow: hidden; }
+#conts3 .pr4 .min li .select { border-color: #ffc62d; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* vp_kwater, vp_ggcf, vp_ */
