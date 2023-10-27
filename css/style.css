@@ -218,7 +218,7 @@ header ul li { float: left; margin-left: 50px; line-height: 70px; font-size: 24p
 
 #vp { width: 100%; }
 
-.up { width: 60px; line-height: 60px; border-radius: 10px; border: 5px solid #333; background: transparent; text-align: center; position: fixed; right: 200px; bottom: 300px; } 
+.up_button { width: 60px; line-height: 60px; border-radius: 10px; border: 5px solid #333; background: transparent; text-align: center; position: fixed; right: 200px; bottom: 300px; } 
 
 
 
