@@ -458,6 +458,15 @@
                             <br>
                             <br>마지막까지 포트폴리오를 봐주신 분들께 감사드립니다.
                         </p>
+                        <div class="contact">
+                            <p>귀사의 연락을 기다리겠습니다.</p>
+                            <span>
+                                call: <a href="tel:01095883241">010 9588 3241</a>
+                            </span>
+                            <span>
+                                e-mail: <a href="mailto:itshong91@gmail.com">itshong91@gmail.com</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -536,14 +545,14 @@
             }
         }
         
-        var timer = setInterval("auto()",3000);
+        var timer = setInterval("auto()",4000);
         
         $(".portfolio").hover(
             function(){
                 clearInterval(timer);
             },
             function(){
-                timer = setInterval("auto()",3000);
+                timer = setInterval("auto()",4000);
             }
         );
         
@@ -612,6 +621,10 @@
             
         });
         
+        $(".pr5").on("mouseleave focusout", function(){
+            $(".hl").removeClass("go");
+            
+        });
         
         
         
