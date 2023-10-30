@@ -4,7 +4,7 @@
 
 $(window).scroll(function(){
     var wtt = $(this).scrollTop();
-    if (wtt > 500) {
+    if (wtt > 600) {
         $(".up_button").addClass("bt");
     } else {
         $(".up_button").removeClass("bt");

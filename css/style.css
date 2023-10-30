@@ -198,10 +198,14 @@ header ul li { float: left; margin-left: 50px; line-height: 70px; font-size: 24p
 #conts3 .pr4 .min li .select { border-color: #ffc62d; }
 
 
+#conts3 .pr5 h3 { width: 1060px; font-size: 46px; font-weight: bold; color: #fff; background: #332bde; padding: 60px 0; box-sizing: border-box; margin: 0 auto; text-align: center; }
 
+#conts3 .pr5 p { margin-top: 50px; font-size: 30px; font-weight: 500; text-align: center; }
+#conts3 .pr5 p .hl { position: relative; display: inline-table; overflow: hidden; }
+#conts3 .pr5 p .hl span { position: relative; z-index: 2; }
+#conts3 .pr5 p .hl::before { content: ""; display: block; width: 100%; height: 100%; background: rgba(255,223,49,0.5); position: absolute; top: 0; left: -100%; transition: 0.3s; }
 
-
-
+#conts3 .pr5 p span.go::before { left: 0; z-index: 1; }
 
 
 
